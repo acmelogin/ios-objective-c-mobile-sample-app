@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="o2Q-Y6-zF2">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="g9x-Ry-49t">
+            <objects>
+                <navigationController navigationBarHidden="YES" id="o2Q-Y6-zF2" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="1fA-1P-Hdp">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="dP1-jw-woC"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="he7-15-O1U" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1148" y="100"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AWO-i4-KpG">
+                                <rect key="frame" x="36" y="186" width="303" height="461"/>
+                                <state key="normal" title="ACME Login"/>
+                                <connections>
+                                    <action selector="lalaLoginButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GPS-NF-htJ"/>
+                                    <segue destination="lJv-al-Du4" kind="show" identifier="login" id="ERy-hJ-vMN"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="ldK-Zr-Vwb">
+                                <rect key="frame" x="0.0" y="28" width="375" height="150"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ldK-Zr-Vwb" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="D54-8c-gXT"/>
+                            <constraint firstAttribute="trailing" secondItem="ldK-Zr-Vwb" secondAttribute="trailing" id="Fp7-RM-V5T"/>
+                            <constraint firstItem="ldK-Zr-Vwb" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="Qif-r5-9Jm"/>
+                            <constraint firstItem="AWO-i4-KpG" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="anW-Nv-x81"/>
+                            <constraint firstItem="AWO-i4-KpG" firstAttribute="top" secondItem="ldK-Zr-Vwb" secondAttribute="bottom" constant="8" id="csj-Cp-l0h"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="AWO-i4-KpG" secondAttribute="trailing" constant="20" id="iuK-lB-UIh"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="AWO-i4-KpG" secondAttribute="bottom" constant="20" id="vgo-w9-RvG"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="VTy-V2-GSx"/>
+                    <connections>
+                        <outlet property="lalaLoginButton" destination="AWO-i4-KpG" id="TzA-h3-yCE"/>
+                        <outlet property="lalaLogoImageView" destination="ldK-Zr-Vwb" id="CPV-XR-oer"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-338.39999999999998" y="100.29985007496252"/>
+        </scene>
+        <!--First View Controller-->
+        <scene sceneID="Pid-7V-yXh">
+            <objects>
+                <viewController storyboardIdentifier="FirstViewController" id="lJv-al-Du4" customClass="FirstViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="dd4-tN-3Mx"/>
+                        <viewControllerLayoutGuide type="bottom" id="hAa-Lh-3au"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="xaT-rY-DpO">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ZLa-s1-ACp">
+                                <rect key="frame" x="0.0" y="70" width="375" height="260"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WELCOME" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SDw-Va-Vtl">
+                                <rect key="frame" x="16" y="368" width="343" height="38"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="who" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hdR-e8-SxN">
+                                <rect key="frame" x="36" y="438" width="303" height="76"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eIn-Oq-g5l">
+                                <rect key="frame" x="36" y="534" width="303" height="113"/>
+                                <state key="normal" title="Logout"/>
+                                <connections>
+                                    <action selector="actionSignOutButton" destination="lJv-al-Du4" eventType="touchUpInside" id="MLp-N9-Agg"/>
+                                </connections>
+                            </button>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progressViewStyle="bar" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="arN-oE-8nJ">
+                                <rect key="frame" x="36" y="337.5" width="303" height="2.5"/>
+                            </progressView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="SDw-Va-Vtl" firstAttribute="top" secondItem="arN-oE-8nJ" secondAttribute="bottom" constant="29" id="2cU-kt-O6H"/>
+                            <constraint firstItem="eIn-Oq-g5l" firstAttribute="leading" secondItem="xaT-rY-DpO" secondAttribute="leadingMargin" constant="20" id="5Sg-9G-Me1"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="arN-oE-8nJ" secondAttribute="trailing" constant="20" id="8IG-cE-PeP"/>
+                            <constraint firstItem="eIn-Oq-g5l" firstAttribute="top" secondItem="hdR-e8-SxN" secondAttribute="bottom" constant="20" id="9eN-9j-LWm"/>
+                            <constraint firstItem="hAa-Lh-3au" firstAttribute="top" secondItem="hdR-e8-SxN" secondAttribute="bottom" constant="153" id="BcQ-Mj-Vfr"/>
+                            <constraint firstItem="hAa-Lh-3au" firstAttribute="top" secondItem="SDw-Va-Vtl" secondAttribute="bottom" constant="261" id="Hsg-bq-fTC"/>
+                            <constraint firstItem="hAa-Lh-3au" firstAttribute="top" secondItem="eIn-Oq-g5l" secondAttribute="bottom" constant="20" id="ImM-a0-aTo"/>
+                            <constraint firstItem="ZLa-s1-ACp" firstAttribute="leading" secondItem="xaT-rY-DpO" secondAttribute="leading" id="KOH-QW-Ma4"/>
+                            <constraint firstItem="SDw-Va-Vtl" firstAttribute="top" secondItem="ZLa-s1-ACp" secondAttribute="bottom" constant="38" id="Kq4-hq-LM1"/>
+                            <constraint firstAttribute="trailing" secondItem="ZLa-s1-ACp" secondAttribute="trailing" id="Pv8-0q-ceg"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="hdR-e8-SxN" secondAttribute="trailing" constant="20" id="UKS-1S-oWf"/>
+                            <constraint firstItem="hdR-e8-SxN" firstAttribute="top" secondItem="SDw-Va-Vtl" secondAttribute="bottom" constant="32" id="WZa-w9-fSB"/>
+                            <constraint firstItem="ZLa-s1-ACp" firstAttribute="top" secondItem="dd4-tN-3Mx" secondAttribute="bottom" constant="50" id="bWt-Mc-kxo"/>
+                            <constraint firstItem="SDw-Va-Vtl" firstAttribute="leading" secondItem="xaT-rY-DpO" secondAttribute="leadingMargin" id="brS-V7-omV"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="eIn-Oq-g5l" secondAttribute="trailing" constant="20" id="c1n-zF-Cap"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="SDw-Va-Vtl" secondAttribute="trailing" id="g7j-aU-F7z"/>
+                            <constraint firstItem="hdR-e8-SxN" firstAttribute="leading" secondItem="xaT-rY-DpO" secondAttribute="leadingMargin" constant="20" id="lpA-pG-fGR"/>
+                            <constraint firstItem="hAa-Lh-3au" firstAttribute="top" secondItem="ZLa-s1-ACp" secondAttribute="bottom" constant="337" id="n6e-Ed-v54"/>
+                            <constraint firstItem="arN-oE-8nJ" firstAttribute="top" secondItem="ZLa-s1-ACp" secondAttribute="bottom" constant="7.5" id="sIA-8g-uRM"/>
+                            <constraint firstItem="arN-oE-8nJ" firstAttribute="leading" secondItem="xaT-rY-DpO" secondAttribute="leadingMargin" constant="20" id="tVB-Jf-eT6"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="lalaInfoImageView" destination="ZLa-s1-ACp" id="YjU-7b-OG9"/>
+                        <outlet property="lalaInfoLabel" destination="SDw-Va-Vtl" id="9qb-60-7lU"/>
+                        <outlet property="whoLabel" destination="hdR-e8-SxN" id="X8a-Sx-ZiU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XLD-4Z-5hZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="660" y="98.50074962518741"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="logo" width="127" height="150"/>
+    </resources>
+</document>

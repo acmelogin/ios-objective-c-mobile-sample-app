@@ -1,0 +1,480 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		327AB4B51EB1E1EA001F19CB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 327AB4B41EB1E1EA001F19CB /* main.m */; };
+		327AB4B81EB1E1EA001F19CB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 327AB4B71EB1E1EA001F19CB /* AppDelegate.m */; };
+		327AB4BB1EB1E1EA001F19CB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 327AB4BA1EB1E1EA001F19CB /* ViewController.m */; };
+		327AB4BE1EB1E1EA001F19CB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 327AB4BC1EB1E1EA001F19CB /* Main.storyboard */; };
+		327AB4C01EB1E1EA001F19CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 327AB4BF1EB1E1EA001F19CB /* Assets.xcassets */; };
+		327AB4C31EB1E1EA001F19CB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 327AB4C11EB1E1EA001F19CB /* LaunchScreen.storyboard */; };
+		327AB4CC1EB1EA44001F19CB /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 327AB4CB1EB1EA44001F19CB /* FirstViewController.m */; };
+		327AB5101EB1ECA7001F19CB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 327AB50F1EB1ECA7001F19CB /* Foundation.framework */; };
+		327AB5431EB1EE67001F19CB /* CertHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 327AB5191EB1EE67001F19CB /* CertHelper.m */; };
+		327AB5441EB1EE67001F19CB /* HMAC.m in Sources */ = {isa = PBXBuildFile; fileRef = 327AB51B1EB1EE67001F19CB /* HMAC.m */; };
+		327AB5451EB1EE67001F19CB /* HttpHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 327AB51D1EB1EE67001F19CB /* HttpHelper.m */; };
+		327AB5461EB1EE67001F19CB /* HttpIgnoreSSLErrors.m in Sources */ = {isa = PBXBuildFile; fileRef = 327AB51F1EB1EE67001F19CB /* HttpIgnoreSSLErrors.m */; };
+		327AB5471EB1EE67001F19CB /* HttpResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 327AB5211EB1EE67001F19CB /* HttpResponse.m */; };
+		327AB5481EB1EE67001F19CB /* JWA.m in Sources */ = {isa = PBXBuildFile; fileRef = 327AB5231EB1EE67001F19CB /* JWA.m */; };
+		327AB5491EB1EE67001F19CB /* JWK.m in Sources */ = {isa = PBXBuildFile; fileRef = 327AB5251EB1EE67001F19CB /* JWK.m */; };
+		327AB54A1EB1EE67001F19CB /* JWKS.m in Sources */ = {isa = PBXBuildFile; fileRef = 327AB5271EB1EE67001F19CB /* JWKS.m */; };
+		327AB54B1EB1EE67001F19CB /* JWS.m in Sources */ = {isa = PBXBuildFile; fileRef = 327AB5291EB1EE67001F19CB /* JWS.m */; };
+		327AB54C1EB1EE67001F19CB /* JWT.m in Sources */ = {isa = PBXBuildFile; fileRef = 327AB52B1EB1EE67001F19CB /* JWT.m */; };
+		327AB54D1EB1EE67001F19CB /* KeychainHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 327AB52D1EB1EE67001F19CB /* KeychainHelper.m */; };
+		327AB54E1EB1EE67001F19CB /* MetadataHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 327AB52F1EB1EE67001F19CB /* MetadataHelper.m */; };
+		327AB54F1EB1EE67001F19CB /* OAuth2Client.m in Sources */ = {isa = PBXBuildFile; fileRef = 327AB5311EB1EE67001F19CB /* OAuth2Client.m */; };
+		327AB5501EB1EE67001F19CB /* OpenIDConnectLibrary.m in Sources */ = {isa = PBXBuildFile; fileRef = 327AB5341EB1EE67001F19CB /* OpenIDConnectLibrary.m */; };
+		327AB5511EB1EE67001F19CB /* RSAPKCS1_5.m in Sources */ = {isa = PBXBuildFile; fileRef = 327AB5361EB1EE67001F19CB /* RSAPKCS1_5.m */; };
+		327AB5521EB1EE67001F19CB /* SHA.m in Sources */ = {isa = PBXBuildFile; fileRef = 327AB5381EB1EE67001F19CB /* SHA.m */; };
+		327AB5531EB1EE67001F19CB /* TokenValidationHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 327AB53A1EB1EE67001F19CB /* TokenValidationHelper.m */; };
+		327AB5541EB1EE67001F19CB /* TokenValidationResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 327AB53C1EB1EE67001F19CB /* TokenValidationResult.m */; };
+		327AB5551EB1EE67001F19CB /* UserInfoEndpoint.m in Sources */ = {isa = PBXBuildFile; fileRef = 327AB53E1EB1EE67001F19CB /* UserInfoEndpoint.m */; };
+		327AB5561EB1EE67001F19CB /* Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 327AB5401EB1EE67001F19CB /* Utils.m */; };
+		327AB5571EB1EE67001F19CB /* XmlParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 327AB5421EB1EE67001F19CB /* XmlParser.m */; };
+		327AB55C1EB1F78A001F19CB /* LaLaAppCurrentSession.m in Sources */ = {isa = PBXBuildFile; fileRef = 327AB55B1EB1F78A001F19CB /* LaLaAppCurrentSession.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		327AB4B01EB1E1EA001F19CB /* LaLaApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LaLaApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		327AB4B41EB1E1EA001F19CB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		327AB4B61EB1E1EA001F19CB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		327AB4B71EB1E1EA001F19CB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		327AB4B91EB1E1EA001F19CB /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		327AB4BA1EB1E1EA001F19CB /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		327AB4BD1EB1E1EA001F19CB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		327AB4BF1EB1E1EA001F19CB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		327AB4C21EB1E1EA001F19CB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		327AB4C41EB1E1EA001F19CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		327AB4CA1EB1EA44001F19CB /* FirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
+		327AB4CB1EB1EA44001F19CB /* FirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		327AB50F1EB1ECA7001F19CB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		327AB5181EB1EE67001F19CB /* CertHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CertHelper.h; sourceTree = "<group>"; };
+		327AB5191EB1EE67001F19CB /* CertHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CertHelper.m; sourceTree = "<group>"; };
+		327AB51A1EB1EE67001F19CB /* HMAC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMAC.h; sourceTree = "<group>"; };
+		327AB51B1EB1EE67001F19CB /* HMAC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMAC.m; sourceTree = "<group>"; };
+		327AB51C1EB1EE67001F19CB /* HttpHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HttpHelper.h; sourceTree = "<group>"; };
+		327AB51D1EB1EE67001F19CB /* HttpHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HttpHelper.m; sourceTree = "<group>"; };
+		327AB51E1EB1EE67001F19CB /* HttpIgnoreSSLErrors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HttpIgnoreSSLErrors.h; sourceTree = "<group>"; };
+		327AB51F1EB1EE67001F19CB /* HttpIgnoreSSLErrors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HttpIgnoreSSLErrors.m; sourceTree = "<group>"; };
+		327AB5201EB1EE67001F19CB /* HttpResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HttpResponse.h; sourceTree = "<group>"; };
+		327AB5211EB1EE67001F19CB /* HttpResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HttpResponse.m; sourceTree = "<group>"; };
+		327AB5221EB1EE67001F19CB /* JWA.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JWA.h; sourceTree = "<group>"; };
+		327AB5231EB1EE67001F19CB /* JWA.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JWA.m; sourceTree = "<group>"; };
+		327AB5241EB1EE67001F19CB /* JWK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JWK.h; sourceTree = "<group>"; };
+		327AB5251EB1EE67001F19CB /* JWK.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JWK.m; sourceTree = "<group>"; };
+		327AB5261EB1EE67001F19CB /* JWKS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JWKS.h; sourceTree = "<group>"; };
+		327AB5271EB1EE67001F19CB /* JWKS.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JWKS.m; sourceTree = "<group>"; };
+		327AB5281EB1EE67001F19CB /* JWS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JWS.h; sourceTree = "<group>"; };
+		327AB5291EB1EE67001F19CB /* JWS.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JWS.m; sourceTree = "<group>"; };
+		327AB52A1EB1EE67001F19CB /* JWT.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JWT.h; sourceTree = "<group>"; };
+		327AB52B1EB1EE67001F19CB /* JWT.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JWT.m; sourceTree = "<group>"; };
+		327AB52C1EB1EE67001F19CB /* KeychainHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeychainHelper.h; sourceTree = "<group>"; };
+		327AB52D1EB1EE67001F19CB /* KeychainHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeychainHelper.m; sourceTree = "<group>"; };
+		327AB52E1EB1EE67001F19CB /* MetadataHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MetadataHelper.h; sourceTree = "<group>"; };
+		327AB52F1EB1EE67001F19CB /* MetadataHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MetadataHelper.m; sourceTree = "<group>"; };
+		327AB5301EB1EE67001F19CB /* OAuth2Client.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OAuth2Client.h; sourceTree = "<group>"; };
+		327AB5311EB1EE67001F19CB /* OAuth2Client.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OAuth2Client.m; sourceTree = "<group>"; };
+		327AB5321EB1EE67001F19CB /* OpenIDConnectLibrary-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "OpenIDConnectLibrary-Prefix.pch"; sourceTree = "<group>"; };
+		327AB5331EB1EE67001F19CB /* OpenIDConnectLibrary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenIDConnectLibrary.h; sourceTree = "<group>"; };
+		327AB5341EB1EE67001F19CB /* OpenIDConnectLibrary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OpenIDConnectLibrary.m; sourceTree = "<group>"; };
+		327AB5351EB1EE67001F19CB /* RSAPKCS1_5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSAPKCS1_5.h; sourceTree = "<group>"; };
+		327AB5361EB1EE67001F19CB /* RSAPKCS1_5.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSAPKCS1_5.m; sourceTree = "<group>"; };
+		327AB5371EB1EE67001F19CB /* SHA.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHA.h; sourceTree = "<group>"; };
+		327AB5381EB1EE67001F19CB /* SHA.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHA.m; sourceTree = "<group>"; };
+		327AB5391EB1EE67001F19CB /* TokenValidationHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TokenValidationHelper.h; sourceTree = "<group>"; };
+		327AB53A1EB1EE67001F19CB /* TokenValidationHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TokenValidationHelper.m; sourceTree = "<group>"; };
+		327AB53B1EB1EE67001F19CB /* TokenValidationResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TokenValidationResult.h; sourceTree = "<group>"; };
+		327AB53C1EB1EE67001F19CB /* TokenValidationResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TokenValidationResult.m; sourceTree = "<group>"; };
+		327AB53D1EB1EE67001F19CB /* UserInfoEndpoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserInfoEndpoint.h; sourceTree = "<group>"; };
+		327AB53E1EB1EE67001F19CB /* UserInfoEndpoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserInfoEndpoint.m; sourceTree = "<group>"; };
+		327AB53F1EB1EE67001F19CB /* Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utils.h; sourceTree = "<group>"; };
+		327AB5401EB1EE67001F19CB /* Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utils.m; sourceTree = "<group>"; };
+		327AB5411EB1EE67001F19CB /* XmlParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XmlParser.h; sourceTree = "<group>"; };
+		327AB5421EB1EE67001F19CB /* XmlParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XmlParser.m; sourceTree = "<group>"; };
+		327AB55A1EB1F78A001F19CB /* LaLaAppCurrentSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LaLaAppCurrentSession.h; sourceTree = "<group>"; };
+		327AB55B1EB1F78A001F19CB /* LaLaAppCurrentSession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LaLaAppCurrentSession.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		327AB4AD1EB1E1EA001F19CB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				327AB5101EB1ECA7001F19CB /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		327AB4A71EB1E1EA001F19CB = {
+			isa = PBXGroup;
+			children = (
+				327AB4B21EB1E1EA001F19CB /* LaLaApp */,
+				327AB4B11EB1E1EA001F19CB /* Products */,
+				327AB50E1EB1ECA7001F19CB /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		327AB4B11EB1E1EA001F19CB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				327AB4B01EB1E1EA001F19CB /* LaLaApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		327AB4B21EB1E1EA001F19CB /* LaLaApp */ = {
+			isa = PBXGroup;
+			children = (
+				327AB4B61EB1E1EA001F19CB /* AppDelegate.h */,
+				327AB4B71EB1E1EA001F19CB /* AppDelegate.m */,
+				327AB4B91EB1E1EA001F19CB /* ViewController.h */,
+				327AB4BA1EB1E1EA001F19CB /* ViewController.m */,
+				327AB4CA1EB1EA44001F19CB /* FirstViewController.h */,
+				327AB4CB1EB1EA44001F19CB /* FirstViewController.m */,
+				327AB55A1EB1F78A001F19CB /* LaLaAppCurrentSession.h */,
+				327AB55B1EB1F78A001F19CB /* LaLaAppCurrentSession.m */,
+				327AB4BC1EB1E1EA001F19CB /* Main.storyboard */,
+				327AB4BF1EB1E1EA001F19CB /* Assets.xcassets */,
+				327AB4C11EB1E1EA001F19CB /* LaunchScreen.storyboard */,
+				327AB4C41EB1E1EA001F19CB /* Info.plist */,
+				327AB4B31EB1E1EA001F19CB /* Supporting Files */,
+			);
+			path = LaLaApp;
+			sourceTree = "<group>";
+		};
+		327AB4B31EB1E1EA001F19CB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				327AB5171EB1EE55001F19CB /* OpenIDConnect Lib */,
+				327AB4B41EB1E1EA001F19CB /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		327AB50E1EB1ECA7001F19CB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				327AB50F1EB1ECA7001F19CB /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		327AB5171EB1EE55001F19CB /* OpenIDConnect Lib */ = {
+			isa = PBXGroup;
+			children = (
+				327AB5181EB1EE67001F19CB /* CertHelper.h */,
+				327AB5191EB1EE67001F19CB /* CertHelper.m */,
+				327AB51A1EB1EE67001F19CB /* HMAC.h */,
+				327AB51B1EB1EE67001F19CB /* HMAC.m */,
+				327AB51C1EB1EE67001F19CB /* HttpHelper.h */,
+				327AB51D1EB1EE67001F19CB /* HttpHelper.m */,
+				327AB51E1EB1EE67001F19CB /* HttpIgnoreSSLErrors.h */,
+				327AB51F1EB1EE67001F19CB /* HttpIgnoreSSLErrors.m */,
+				327AB5201EB1EE67001F19CB /* HttpResponse.h */,
+				327AB5211EB1EE67001F19CB /* HttpResponse.m */,
+				327AB5221EB1EE67001F19CB /* JWA.h */,
+				327AB5231EB1EE67001F19CB /* JWA.m */,
+				327AB5241EB1EE67001F19CB /* JWK.h */,
+				327AB5251EB1EE67001F19CB /* JWK.m */,
+				327AB5261EB1EE67001F19CB /* JWKS.h */,
+				327AB5271EB1EE67001F19CB /* JWKS.m */,
+				327AB5281EB1EE67001F19CB /* JWS.h */,
+				327AB5291EB1EE67001F19CB /* JWS.m */,
+				327AB52A1EB1EE67001F19CB /* JWT.h */,
+				327AB52B1EB1EE67001F19CB /* JWT.m */,
+				327AB52C1EB1EE67001F19CB /* KeychainHelper.h */,
+				327AB52D1EB1EE67001F19CB /* KeychainHelper.m */,
+				327AB52E1EB1EE67001F19CB /* MetadataHelper.h */,
+				327AB52F1EB1EE67001F19CB /* MetadataHelper.m */,
+				327AB5301EB1EE67001F19CB /* OAuth2Client.h */,
+				327AB5311EB1EE67001F19CB /* OAuth2Client.m */,
+				327AB5321EB1EE67001F19CB /* OpenIDConnectLibrary-Prefix.pch */,
+				327AB5331EB1EE67001F19CB /* OpenIDConnectLibrary.h */,
+				327AB5341EB1EE67001F19CB /* OpenIDConnectLibrary.m */,
+				327AB5351EB1EE67001F19CB /* RSAPKCS1_5.h */,
+				327AB5361EB1EE67001F19CB /* RSAPKCS1_5.m */,
+				327AB5371EB1EE67001F19CB /* SHA.h */,
+				327AB5381EB1EE67001F19CB /* SHA.m */,
+				327AB5391EB1EE67001F19CB /* TokenValidationHelper.h */,
+				327AB53A1EB1EE67001F19CB /* TokenValidationHelper.m */,
+				327AB53B1EB1EE67001F19CB /* TokenValidationResult.h */,
+				327AB53C1EB1EE67001F19CB /* TokenValidationResult.m */,
+				327AB53D1EB1EE67001F19CB /* UserInfoEndpoint.h */,
+				327AB53E1EB1EE67001F19CB /* UserInfoEndpoint.m */,
+				327AB53F1EB1EE67001F19CB /* Utils.h */,
+				327AB5401EB1EE67001F19CB /* Utils.m */,
+				327AB5411EB1EE67001F19CB /* XmlParser.h */,
+				327AB5421EB1EE67001F19CB /* XmlParser.m */,
+			);
+			name = "OpenIDConnect Lib";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		327AB4AF1EB1E1EA001F19CB /* LaLaApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 327AB4C71EB1E1EA001F19CB /* Build configuration list for PBXNativeTarget "LaLaApp" */;
+			buildPhases = (
+				327AB4AC1EB1E1EA001F19CB /* Sources */,
+				327AB4AD1EB1E1EA001F19CB /* Frameworks */,
+				327AB4AE1EB1E1EA001F19CB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LaLaApp;
+			productName = LaLaApp;
+			productReference = 327AB4B01EB1E1EA001F19CB /* LaLaApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		327AB4A81EB1E1EA001F19CB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = sp;
+				TargetAttributes = {
+					327AB4AF1EB1E1EA001F19CB = {
+						CreatedOnToolsVersion = 8.3.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 327AB4AB1EB1E1EA001F19CB /* Build configuration list for PBXProject "LaLaApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 327AB4A71EB1E1EA001F19CB;
+			productRefGroup = 327AB4B11EB1E1EA001F19CB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				327AB4AF1EB1E1EA001F19CB /* LaLaApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		327AB4AE1EB1E1EA001F19CB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				327AB4C31EB1E1EA001F19CB /* LaunchScreen.storyboard in Resources */,
+				327AB4C01EB1E1EA001F19CB /* Assets.xcassets in Resources */,
+				327AB4BE1EB1E1EA001F19CB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		327AB4AC1EB1E1EA001F19CB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				327AB5521EB1EE67001F19CB /* SHA.m in Sources */,
+				327AB5551EB1EE67001F19CB /* UserInfoEndpoint.m in Sources */,
+				327AB54A1EB1EE67001F19CB /* JWKS.m in Sources */,
+				327AB5561EB1EE67001F19CB /* Utils.m in Sources */,
+				327AB5511EB1EE67001F19CB /* RSAPKCS1_5.m in Sources */,
+				327AB5491EB1EE67001F19CB /* JWK.m in Sources */,
+				327AB54D1EB1EE67001F19CB /* KeychainHelper.m in Sources */,
+				327AB5531EB1EE67001F19CB /* TokenValidationHelper.m in Sources */,
+				327AB4BB1EB1E1EA001F19CB /* ViewController.m in Sources */,
+				327AB4B81EB1E1EA001F19CB /* AppDelegate.m in Sources */,
+				327AB5441EB1EE67001F19CB /* HMAC.m in Sources */,
+				327AB5461EB1EE67001F19CB /* HttpIgnoreSSLErrors.m in Sources */,
+				327AB5571EB1EE67001F19CB /* XmlParser.m in Sources */,
+				327AB4B51EB1E1EA001F19CB /* main.m in Sources */,
+				327AB54C1EB1EE67001F19CB /* JWT.m in Sources */,
+				327AB54F1EB1EE67001F19CB /* OAuth2Client.m in Sources */,
+				327AB5431EB1EE67001F19CB /* CertHelper.m in Sources */,
+				327AB5451EB1EE67001F19CB /* HttpHelper.m in Sources */,
+				327AB4CC1EB1EA44001F19CB /* FirstViewController.m in Sources */,
+				327AB5501EB1EE67001F19CB /* OpenIDConnectLibrary.m in Sources */,
+				327AB55C1EB1F78A001F19CB /* LaLaAppCurrentSession.m in Sources */,
+				327AB54E1EB1EE67001F19CB /* MetadataHelper.m in Sources */,
+				327AB54B1EB1EE67001F19CB /* JWS.m in Sources */,
+				327AB5541EB1EE67001F19CB /* TokenValidationResult.m in Sources */,
+				327AB5481EB1EE67001F19CB /* JWA.m in Sources */,
+				327AB5471EB1EE67001F19CB /* HttpResponse.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		327AB4BC1EB1E1EA001F19CB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				327AB4BD1EB1E1EA001F19CB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		327AB4C11EB1E1EA001F19CB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				327AB4C21EB1E1EA001F19CB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		327AB4C51EB1E1EA001F19CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		327AB4C61EB1E1EA001F19CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		327AB4C81EB1E1EA001F19CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_NO_COMMON_BLOCKS = NO;
+				INFOPLIST_FILE = LaLaApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sp.LaLaApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		327AB4C91EB1E1EA001F19CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_NO_COMMON_BLOCKS = NO;
+				INFOPLIST_FILE = LaLaApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sp.LaLaApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		327AB4AB1EB1E1EA001F19CB /* Build configuration list for PBXProject "LaLaApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				327AB4C51EB1E1EA001F19CB /* Debug */,
+				327AB4C61EB1E1EA001F19CB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		327AB4C71EB1E1EA001F19CB /* Build configuration list for PBXNativeTarget "LaLaApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				327AB4C81EB1E1EA001F19CB /* Debug */,
+				327AB4C91EB1E1EA001F19CB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 327AB4A81EB1E1EA001F19CB /* Project object */;
+}
